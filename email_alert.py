@@ -101,7 +101,7 @@ for category, items in TARGET_DATA.items():
                     print(f"❌ [{item_name}] 3회 시도 모두 실패 (최종 에러): {e}")
                     current_dates_dict[item_name] = {"category": category, "date": "통신에러"}
         
-        time.sleep(0.4) 
+        time.sleep(3) 
 
 if len(current_dates_dict) == 0:
     print("🚨 치명적 에러: 데이터를 단 하나도 가져오지 못했습니다.")
